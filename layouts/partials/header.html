@@ -2,11 +2,12 @@
     <h2><a href="/">{{ .Site.Title }}</a></h2>
     <nav>
         <ul>
-        {{ range where .Site.Home.Pages "Section" "!=" "posts" }}
+            <li><a href="/">posts</a></li>
+            {{- range where .Site.Home.Pages "Section" "!=" "posts" -}}
             <li>
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
             </li>
-        {{ end }}
+            {{- end -}}
         </ul>
     </nav>
 </header>
