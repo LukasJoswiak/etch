@@ -1,8 +1,8 @@
 <header id="banner">
-    <h2><a href="/">{{ .Site.Title }}</a></h2>
+    <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
     <nav>
         <ul>
-            <li><a href="/">posts</a></li>
+            <li><a href="{{ .Site.BaseURL }}">posts</a></li>
             {{- range where .Site.Home.Pages "Section" "!=" "posts" -}}
             <li>
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
