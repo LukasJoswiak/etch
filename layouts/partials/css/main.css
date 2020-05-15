@@ -109,6 +109,7 @@ main#content h4,
 main#content h5,
 main#content h6 {
     margin-bottom: 0;
+    line-height: 1.15;
 }
 
 main#content h1 + p,
@@ -145,6 +146,12 @@ main#content ul#posts small {
     margin-left: 10px;
 }
 
+@media (prefers-color-scheme: dark) {
+    main#content ul#posts small {
+        color: #a7a7a7;
+    }
+}
+
 main#content ul#posts li a {
     text-decoration: none;
 }
@@ -164,9 +171,23 @@ main#content ul#posts li a:hover small {
 }
 
 /* single.html styles */
-main#content header#post-title {
-    font-size: 16px;
-    font-size: 1.6rem;
+main#content header#post-header h1 {
+    display: block;
+    font-size: 23px;
+    font-size: 2.3rem;
+    line-height: 1.15;
+}
+
+main#content header#post-header time {
+    display: block;
+    font-size: 0.85em;
+    color: #767676;
+}
+
+@media (prefers-color-scheme: dark) {
+    main#content header#post-header time {
+        color: #a7a7a7;
+    }
 }
 
 main#content img {
