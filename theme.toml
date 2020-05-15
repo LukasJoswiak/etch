@@ -1,0 +1,12 @@
+name = "Etch"
+license = "MIT"
+licenselink = "https://github.com/LukasJoswiak/etch/blob/master/LICENSE"
+description = ""
+homepage = "http://example.com/"
+tags = ["simple", "clean", "fast", "responsive", "dark mode"]
+features = ["fast", "syntax highlighting", "dark mode"]
+min_version = "0.41"
+
+[author]
+  name = "Lukas Joswiak"
+  homepage = "https://lukasjoswiak.com"

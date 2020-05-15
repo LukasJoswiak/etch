@@ -1,0 +1,17 @@
+<head>
+    <title>{{ .Title }}</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style type="text/css" media="screen">
+        {{ partial "css/main.css" . | safeCSS }}
+    </style>
+
+    <style type="text/css" media="(min-width: 770px)">
+        {{ partial "css/min770px.css" . | safeCSS }}
+    </style>
+
+    {{ $syntax := resources.Get "css/syntax.css" | minify }}
+    <link rel="stylesheet" href="{{ $syntax.Permalink }}">
+</head>

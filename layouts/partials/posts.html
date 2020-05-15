@@ -1,0 +1,13 @@
+<h3>Posts</h3>
+{{ range where .Pages "Section" "posts" }}
+    <ul id="posts">
+    {{ range .Pages.ByDate.Reverse }}
+        <li>
+            <a href="{{ .Permalink }}">
+                {{- .Title -}}
+                <small><time>{{ .Date.Format "Jan 2, 2006" }}</time></small>
+            </a>
+        </li>
+    {{ end }}
+    </ul>
+{{ end }}

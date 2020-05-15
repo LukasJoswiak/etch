@@ -1,0 +1,12 @@
+<header id="banner">
+    <h2><a href="/">{{ .Site.Title }}</a></h2>
+    <nav>
+        <ul>
+        {{ range .Site.Home.Pages }}
+            <li>
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </li>
+        {{ end }}
+        </ul>
+    </nav>
+</header>
