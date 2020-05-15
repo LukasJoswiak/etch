@@ -10,7 +10,7 @@ body {
     font-size: 16px;
     font-size: 1.6rem;
     font-family: 'Helvetica Neue', 'Arial', sans-serif;
-    color: #282828;
+    color: #313a3d;
     width: 100%;
     margin: 0 auto;
     padding: 0 16px;
@@ -29,7 +29,7 @@ header#banner {
 }
 
 header#banner a {
-    color: #323232;
+    color: #313a3d;
     text-decoration: none;
 }
 
@@ -92,7 +92,7 @@ main#content a:hover {
 }
 
 main#content p {
-    color: #323232;
+    color: #394548;
     margin: 16px 0;
 }
 
