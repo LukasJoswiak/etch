@@ -15,10 +15,12 @@
         {{ partial "css/min770px.css" . | safeCSS }}
     </style>
 
-    {{ if .Site.Params.highlight }}
-        {{ $syntax := resources.Get "css/syntax.css" | minify }}
-        <link rel="stylesheet" href="{{ $syntax.Permalink }}">
-    {{ end }}
-
-    <link rel="shortcut icon" href='{{ "favicon.ico" | absURL }}'>
+    {{ if .Site.Params.highlight -}}
+        {{ $syntax := resources.Get "css/syntax.css" | minify -}}
+        {{ printf `<link rel="stylesheet" href="%s">` $syntax.Permalink | safeHTML }}
+    {{ end -}}
+    {{ printf `<link rel="shortcut icon" href="%s">` ("favicon.ico" | absURL) | safeHTML }}
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
 </head>
