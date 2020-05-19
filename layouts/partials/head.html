@@ -1,11 +1,13 @@
 <head>
-    <title>{{ .Title }}</title>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {{ with .Site.Params.description }}
+    {{ with .Site.Params.description -}}
     <meta name="description" content="{{ . }}">
     {{ end }}
+    {{ printf `<link rel="shortcut icon" href="%s">` ("favicon.ico" | absURL) | safeHTML }}
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
 
     <style type="text/css" media="screen">
         {{ partial "css/main.css" . | safeCSS }}
@@ -19,8 +21,6 @@
         {{ $syntax := resources.Get "css/syntax.css" | minify -}}
         {{ printf `<link rel="stylesheet" href="%s">` $syntax.Permalink | safeHTML }}
     {{ end -}}
-    {{ printf `<link rel="shortcut icon" href="%s">` ("favicon.ico" | absURL) | safeHTML }}
-    {{ with .OutputFormats.Get "rss" -}}
-        {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
+
+    <title>{{ .Title }}</title>
 </head>
