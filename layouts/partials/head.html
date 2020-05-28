@@ -13,6 +13,13 @@
         {{ partial "css/main.css" . | safeCSS }}
     </style>
 
+    {{ $dark := .Site.Params.dark | default "auto" -}}
+    {{ if not (eq $dark "off") -}}
+    <style type="text/css" media="screen">
+        {{ partial "css/dark.css" . | safeCSS }}
+    </style>
+    {{ end -}}
+
     <style type="text/css" media="(min-width: 770px)">
         {{ partial "css/min770px.css" . | safeCSS }}
     </style>

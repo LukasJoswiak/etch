@@ -17,13 +17,6 @@ body {
     line-height: 1.6;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        color: #ebebeb;
-        background: #121212;
-    }
-}
-
 header#banner {
     margin: 25px 0;
 }
@@ -65,26 +58,9 @@ header#banner nav ul li a {
     color: #454545;
 }
 
-@media (prefers-color-scheme: dark) {
-    header#banner a {
-        color: #e0e0e0;
-        text-decoration: none;
-    }
-
-    header#banner nav ul li a {
-        color: #cccccc;
-    }
-}
-
 main#content a {
     color: #007dfa;
     text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-    main#content a {
-        color: #00b1ed;
-    }
 }
 
 main#content a:hover {
@@ -94,12 +70,6 @@ main#content a:hover {
 main#content p {
     color: #394548;
     margin: 16px 0;
-}
-
-@media (prefers-color-scheme: dark) {
-    main#content p {
-        color: #f5f5f5;
-    }
 }
 
 main#content h1,
@@ -146,12 +116,6 @@ main#content ul#posts small {
     margin-left: 10px;
 }
 
-@media (prefers-color-scheme: dark) {
-    main#content ul#posts small {
-        color: #a7a7a7;
-    }
-}
-
 main#content ul#posts li a {
     text-decoration: none;
 }
@@ -162,12 +126,6 @@ main#content ul#posts li a:hover {
 
 main#content ul#posts li a:hover small {
     color: inherit;
-}
-
-@media (prefers-color-scheme: dark) {
-    main#content ul#posts li a:hover {
-        color: #21c7ff;
-    }
 }
 
 /* single.html styles */
@@ -182,12 +140,6 @@ main#content header#post-header time {
     display: block;
     font-size: 0.85em;
     color: #767676;
-}
-
-@media (prefers-color-scheme: dark) {
-    main#content header#post-header time {
-        color: #a7a7a7;
-    }
 }
 
 main#content img {
@@ -208,7 +160,7 @@ main#content code {
 main#content pre {
     display: block;
     overflow-x: auto;
-    font-size 14px;
+    font-size: 14px;
     font-size: 1.4rem;
     white-space: pre;
     margin: 20px 0;
