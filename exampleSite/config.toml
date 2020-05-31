@@ -8,8 +8,8 @@ pygmentsUseClasses = true
 
 [params]
   description = "Your site description"
-  dark = "auto"
   copyright = "Copyright © 2020 Your Name"
+  dark = "auto"
   highlight = true
 
 [permalinks]
