@@ -142,6 +142,51 @@ main#content header#post-header time {
     color: #767676;
 }
 
+main#content #toc {
+    border: 1px solid #b1b1b1;
+    border-radius: 1px;
+    line-height: 26px;
+    margin: 16px 0;
+    padding: 9px 14px;
+}
+
+main#content #toc h4 {
+    font-size: 1.06em;
+    color: #3d3d3d;
+    margin: 0;
+}
+
+main#content #toc nav#TableOfContents {
+    margin-top: 4px;
+}
+
+main#content #toc nav#TableOfContents > ul, main#content #toc nav#TableOfContents > ol {
+    margin-left: -40px;
+}
+
+main#content #toc ul, main#content #toc ol {
+    font-size: 0.98em;
+    margin: 0;
+    padding: 0 0 0 40px;
+}
+
+main#content #toc ul {
+    list-style-type: none;
+}
+
+main#content #toc ol {
+    counter-reset: item;
+}
+
+main#content #toc ol li {
+    display: block;
+}
+
+main#content #toc ol li:before {
+    content: counters(item, ".") ". ";
+    counter-increment: item;
+}
+
 main#content img {
     max-width: 100%;
     margin: 0 auto;

@@ -23,6 +23,10 @@ main#content p {
     color: #f5f5f5;
 }
 
+main#content #toc h4 {
+    color: #d4d4d4;
+}
+
 main#content ul#posts small {
     color: #a7a7a7;
 }
