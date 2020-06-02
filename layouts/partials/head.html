@@ -9,25 +9,23 @@
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 
-    <style type="text/css" media="screen">
-        {{ partial "css/main.css" . | safeCSS }}
-    </style>
+    {{ $resources := slice -}}
+
+    {{ $resources = $resources | append (resources.Get "css/main.css") -}}
+
+    {{ $resources = $resources | append (resources.Get "css/min770px.css") -}}
 
     {{ $dark := .Site.Params.dark | default "auto" -}}
     {{ if not (eq $dark "off") -}}
-    <style type="text/css" media="screen">
-        {{ partial "css/dark.css" . | safeCSS }}
-    </style>
+        {{ $resources = $resources | append (resources.Get "css/dark.css" | resources.ExecuteAsTemplate "dark.css" .) -}}
     {{ end -}}
-
-    <style type="text/css" media="(min-width: 770px)">
-        {{ partial "css/min770px.css" . | safeCSS }}
-    </style>
 
     {{ if .Site.Params.highlight -}}
-        {{ $syntax := resources.Get "css/syntax.css" | minify -}}
-        {{ printf `<link rel="stylesheet" href="%s">` $syntax.Permalink | safeHTML }}
+        {{ $resources = $resources | append (resources.Get "css/syntax.css") -}}
     {{ end -}}
+
+    {{ $css := $resources | resources.Concat "css/style.css" | minify }}
+    {{ printf `<link rel="stylesheet" href="%s">` $css.RelPermalink | safeHTML }}
 
     <title>{{ .Title }}</title>
 </head>
