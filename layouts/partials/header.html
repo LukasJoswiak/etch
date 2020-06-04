@@ -2,6 +2,7 @@
     <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
     <nav>
         <ul>
+            <li>- technology blog</li>
             {{ range where .Site.Home.Pages "Title" "!=" "Posts" }}
             <li>
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
