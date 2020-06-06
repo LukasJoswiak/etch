@@ -1,16 +1,3 @@
 <footer id="footer">
-<!-- Ticksel v1.0 -->
-<script type="text/javascript">
-  var _tcfg = _tcfg || [];
-  (function() {
-    _tcfg.push(["tags", ""]);
-    var u="https://cdn.ticksel.com/js/analytics_v1.0.js"; _tcfg.push(["account_id", 8456850]);
-    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0];
-    g.type="text/javascript"; g.async=true; g.src=u; g.setAttribute("crossorigin", "anonymous");
-    g.setAttribute("integrity", "sha256-7grd8jMivCG0iCcJ7m/Ny4gvWb0mPVpFhRQovLkaUl8=");
-    s.parentNode.insertBefore(g,s);
-  })();
-</script>
-<noscript><img src="https://beacon.ticksel.com/beam?account_id=8456850&referrer=&tags=" style="border:0;" width="0" height="0" alt="" /></noscript>
-<!-- End Ticksel Code -->
+    {{ .Site.Params.copyright }}
 </footer>
