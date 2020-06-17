@@ -2,7 +2,7 @@
     <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
     <nav>
         <ul>
-            <li>{{ $.Site.Params.description }}</li>
+            <li>{{ $.Site.Params.description }} <script language="javascript"> document.getElementById("footer-text").innerText = "Generic tech blog #" + Math.floor(Math.random()*1_000_000_000); </script></li>
             {{ range where .Site.Home.Pages "Title" "!=" "Posts" }}
             <li>
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
