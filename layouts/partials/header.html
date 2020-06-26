@@ -8,6 +8,11 @@
                 <a href="{{ .Permalink }}">{{ .Title }}</a>
             </li>
             {{ end }}
+            {{ range .Site.Menus.main.ByWeight }}
+            <li>
+                {{ .Pre }}<a href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>{{ .Post }}
+            </li>
+            {{ end }}
         </ul>
     </nav>
 </header>
