@@ -2,10 +2,9 @@
     <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
     <nav>
         <ul>
-            <li><a href="{{ .Site.BaseURL }}">posts</a></li>
-            {{ range where .Site.Home.Pages "Title" "!=" "Posts" }}
+            {{ range .Site.Menus.main.ByWeight }}
             <li>
-                <a href="{{ .Permalink }}">{{ .Title }}</a>
+                {{ .Pre }}<a href="{{ .URL }}" title="{{ .Title }}">{{- .Name -}}</a>{{ .Post }}
             </li>
             {{ end }}
         </ul>
