@@ -4,6 +4,11 @@ body {
     line-height: 1.5;
 }
 
+main#content hr {
+    width: 108%;
+    margin-left: -3.8%;
+}
+
 /* index.html styles */
 header#banner h2 {
     font-size: 25px;

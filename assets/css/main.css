@@ -67,11 +67,6 @@ main#content a:hover {
     text-decoration: underline;
 }
 
-main#content p {
-    color: #394548;
-    margin: 16px 0;
-}
-
 main#content h1,
 main#content h2,
 main#content h3,
@@ -80,6 +75,11 @@ main#content h5,
 main#content h6 {
     margin-bottom: 0;
     line-height: 1.15;
+}
+
+main#content h3 {
+    font-size: 19px;
+    font-size: 1.9rem;
 }
 
 main#content h1 + p,
@@ -91,9 +91,15 @@ main#content h6 + p {
     margin-top: 5px;
 }
 
-main#content h3 {
-    font-size: 19px;
-    font-size: 1.9rem;
+main#content p {
+    color: #394548;
+    margin: 16px 0;
+}
+
+main#content hr {
+    height: 1px;
+    border: 0;
+    background: #d8d8d8;
 }
 
 /* index.html styles */
@@ -246,6 +252,10 @@ main#content pre {
 
 main#content pre code {
     padding: 0;
+}
+
+main#content section.footnotes {
+    font-size: 0.9em;
 }
 
 footer#footer {
