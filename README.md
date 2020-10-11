@@ -15,10 +15,10 @@ Etch is a simple, responsive theme for [Hugo](https://gohugo.io) with a focus on
 
 ## Installation
 
-To install `etch`, clone the repository into the `themes` folder in the root of your site.
+To install `etch`, download the repository into the `themes` folder in the root of your site.
 
 ```
-$ git clone git@github.com:LukasJoswiak/etch.git themes/etch
+$ git submodule add https://github.com/LukasJoswiak/etch.git themes/etch
 ```
 
 Then, use the theme to generate your site.
@@ -27,6 +27,6 @@ Then, use the theme to generate your site.
 $ hugo server -t etch
 ```
 
-Read the [wiki](https://github.com/LukasJoswiak/etch/wiki) to learn about more options.
+Use the [sample configuration](https://github.com/LukasJoswiak/etch/wiki/Configuration#sample-configuration) as a starting point. See the [configuration](https://github.com/LukasJoswiak/etch/wiki/Configuration) page for more info.
 
-***Note**: if you are using Netlify to host your site, you must [add Etch as a submodule](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify) instead of cloning.*
+Read the [wiki](https://github.com/LukasJoswiak/etch/wiki) to learn about more options.
