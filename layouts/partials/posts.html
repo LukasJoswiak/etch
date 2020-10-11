@@ -1,11 +1,11 @@
 <h3>Posts</h3>
 <ul id="posts">
-{{ range where site.RegularPages "Type" "in" site.Params.mainSections }}
+{{- range where site.RegularPages "Type" "in" site.Params.mainSections }}
     <li>
         <a href="{{ .Permalink }}">
-            {{- .Title -}}
+            {{ .Title }}
             <small><time>{{ .Date.Format "Jan 2, 2006" }}</time></small>
         </a>
     </li>
-{{ end }}
+{{- end }}
 </ul>
