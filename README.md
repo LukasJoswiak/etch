@@ -27,6 +27,20 @@ Then, use the theme to generate your site.
 $ hugo server -t etch
 ```
 
+### Submodule install method
+
+```
+$ cd themes
+$ git submodule add git@github.com:LukasJoswiak/etch.git
+```
+
+Update the theme to latest version(for submodule)
+
+```
+$ git submodule update --rebase --remote
+```
+
+
 Read the [wiki](https://github.com/LukasJoswiak/etch/wiki) to learn about more options.
 
 ***Note**: if you are using Netlify to host your site, you must [add Etch as a submodule](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify) instead of cloning.*
