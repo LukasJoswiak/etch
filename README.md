@@ -27,11 +27,6 @@ Then, use the theme to generate your site.
 $ hugo server -t etch
 ```
 
-There is an example configuration file inside the example site, feel free to change it.
-```
-cp themes/etch/exampleSite/config.toml .
-```
+Use the [sample configuration](https://github.com/LukasJoswiak/etch/wiki/Configuration#sample-configuration) as a starting point. See the [configuration](https://github.com/LukasJoswiak/etch/wiki/Configuration) page for more info.
 
 Read the [wiki](https://github.com/LukasJoswiak/etch/wiki) to learn about more options.
-
-***Note**: if you are using Netlify to host your site, you must [add Etch as a submodule](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify) instead of cloning.*
