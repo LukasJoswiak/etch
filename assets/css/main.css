@@ -229,6 +229,15 @@ main#content figure figcaption p {
     padding-left: 8px;
 }
 
+main#content blockquote {
+    font-style: italic;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    padding-left: 15px;
+    border-left: 3px solid #ccc;
+}
+
 main#content code,
 main#content pre {
     font-family: 'Menlo', monospace;
