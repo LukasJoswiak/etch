@@ -43,7 +43,7 @@ main#content ul#posts li a:hover {
     color: #21c7ff;
 }
 
-main#content header#post-header time {
+main#content header#post-header div {
     color: #a7a7a7;
 }
 {{- if not (eq .Site.Params.dark "on") -}}

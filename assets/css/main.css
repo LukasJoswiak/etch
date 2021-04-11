@@ -142,7 +142,7 @@ main#content header#post-header h1 {
     line-height: 1.15;
 }
 
-main#content header#post-header time {
+main#content header#post-header div {
     display: block;
     font-size: 0.85em;
     color: #767676;
