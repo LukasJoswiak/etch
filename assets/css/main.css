@@ -9,7 +9,7 @@ html {
 body {
     font-size: 16px;
     font-size: 1.6rem;
-    font-family: 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #313a3d;
     width: 100%;
     margin: 0 auto;
@@ -139,6 +139,7 @@ main#content header#post-header h1 {
     display: block;
     font-size: 23px;
     font-size: 2.3rem;
+    font-weight: 600;
     line-height: 1.15;
 }
 

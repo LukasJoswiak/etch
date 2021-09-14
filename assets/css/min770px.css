@@ -27,8 +27,8 @@ main#content ul#posts {
 
 /* single.html styles */
 main#content header#post-header h1 {
-    font-size: 26px;
-    font-size: 2.6rem;
+    font-size: 24px;
+    font-size: 2.4rem;
 }
 
 main#content img {
