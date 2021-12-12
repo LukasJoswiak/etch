@@ -102,6 +102,10 @@ main#content hr {
     background: #d8d8d8;
 }
 
+main#content abbr {
+    cursor: help;
+}
+
 /* index.html styles */
 main#content ul#posts {
     list-style-type: none;
