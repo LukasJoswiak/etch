@@ -12,6 +12,7 @@ Etch is a simple, responsive theme for [Hugo](https://gohugo.io) with a focus on
 * Syntax highlighting with customizable theme.
 * Dark theme which automatically adjusts based on users' setting ([example](https://github.com/LukasJoswiak/etch/wiki/Dark-mode)).
 * No external dependencies, no JavaScript, no web fonts.
+* Internationalization friendly: use default English translations or create your own
 
 ## Installation
 
