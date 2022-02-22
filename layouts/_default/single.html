@@ -7,7 +7,7 @@
             {{ if eq .Lastmod .Date }}
                 <time>{{ .Date | time.Format (i18n "post.created") }}</time>
             {{ else }}
-                <time>{{ .Date | time.Format (i18n "post.updated") }}</time>
+                <time>{{ .Lastmod | time.Format (i18n "post.updated") }}</time>
             {{ end }}
         {{- end -}}
         </div>
