@@ -1,5 +1,5 @@
 <header id="banner">
-    <h2><a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></h2>
+    <h2><a href="{{ "/" | absLangURL }}">{{ .Site.Title }}</a></h2>
     <nav>
         <ul>
             {{ range .Site.Menus.main.ByWeight -}}
