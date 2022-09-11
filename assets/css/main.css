@@ -3,7 +3,8 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 75%;
+    background-color: #1a686e06;
 }
 
 body {
@@ -17,6 +18,7 @@ body {
     line-height: 1.6;
 }
 
+/* styling for the header */
 header#banner {
     margin: 25px 0;
 }
@@ -58,13 +60,15 @@ header#banner nav ul li a {
     color: #454545;
 }
 
+/* styling for all the main content */
 main#content a {
-    color: #007dfa;
-    text-decoration: none;
+    color: #1a686e;
+    text-decoration: underline;
 }
 
 main#content a:hover {
     text-decoration: underline;
+    color: #154c50;
 }
 
 main#content h1,
@@ -73,13 +77,21 @@ main#content h3,
 main#content h4,
 main#content h5,
 main#content h6 {
-    margin-bottom: 0;
     line-height: 1.15;
+}
+
+main#content h1 {
+    margin-bottom: 30px;
+}
+
+main#content h2 {
+    margin-bottom: 20px;
 }
 
 main#content h3 {
     font-size: 19px;
     font-size: 1.9rem;
+    margin-bottom: 15px;
 }
 
 main#content h1 + p,
@@ -116,22 +128,48 @@ main#content ul#posts {
 }
 
 main#content ul#posts li {
-    margin: 5px 0;
+    margin: 15px 0 15px;
     padding: 0;
 }
 
-main#content ul#posts small {
+/* styling for the date for posts list */
+main#content ul#posts small, span.post-date {
     font-size: 0.8em;
-    color: #767676;
+    color: #555555;
     margin-left: 10px;
+}
+
+/* styling for the topics listed under each post, incl span */
+main#content ul#posts div.Tag {
+    font-size: 0.8em;
+    color: #7f1e86;
+    margin-left: 8px;    
+}
+
+main#content ul#posts a.p-category {
+    font-size: 0.8em;
+    background-color: #a32fab61;
+    color: black;
+    padding: 0.35em;
+    text-decoration: none;
+}
+
+main#content ul#posts a.p-category:hover {
+    font-size: 0.8em;
+    background-color: #a32fab89;
+    color: black;
+    padding: 0.35em;
+    text-decoration: none;
 }
 
 main#content ul#posts li a {
     text-decoration: none;
+    font-weight: 450;
 }
 
 main#content ul#posts li a:hover {
-    color: #369aff;
+    color: #154c50;
+    text-decoration: underline;
 }
 
 main#content ul#posts li a:hover small {
@@ -235,7 +273,7 @@ main#content figure figcaption p {
 }
 
 main#content blockquote {
-    font-style: italic;
+    font-size: 17px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 50px;
@@ -273,9 +311,9 @@ main#content section.footnotes {
 }
 
 footer#footer {
-    font-size: 14px;
+    font-size: 10px;
     font-size: 1.4rem;
     font-weight: 400;
-    color: #b3b3b3;
+    color: #343434;
     margin: 40px 0;
 }
