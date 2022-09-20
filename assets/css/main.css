@@ -237,8 +237,10 @@ main#content #toc ol li:before {
 }
 
 main#content img {
-    max-width: 100%;
-    margin: 0 auto;
+    max-width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main#content figure {
