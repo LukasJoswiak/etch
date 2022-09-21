@@ -3,11 +3,12 @@
 {{ end -}}
 html {
     scrollbar-color: #6c6c6c #2e2e2e;
+    background-color: #35363A;
 }
 
 body {
     color: #ebebeb;
-    background: #121212;
+    background: #35363A;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -30,7 +31,7 @@ main#content p {
 }
 
 main#content hr {
-    background: #5c5c5c;
+    background: #35363A;
 }
 
 main#content #toc h4 {
@@ -41,6 +42,18 @@ main#content ul#posts small {
     color: #a7a7a7;
 }
 
+main#content ul#posts a.p-category {
+    color: white;
+}
+
+main#content ul#posts a.p-category:hover {
+    color: white;
+}
+
+main#content ul#posts small, span.post-date {
+    color: #d4d4d4;
+}
+
 main#content ul#posts li a:hover {
     color: #21c7ff;
 }
@@ -48,6 +61,11 @@ main#content ul#posts li a:hover {
 main#content header#post-header div {
     color: #a7a7a7;
 }
+
+footer#footer {
+    color: #cccccc;
+}
+
 {{- if not (eq .Site.Params.dark "on") -}}
 }
 {{- end -}}
