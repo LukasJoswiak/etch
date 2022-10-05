@@ -15,6 +15,7 @@ body {
     margin: 0 auto;
     padding: 0 16px;
     line-height: 1.6;
+    overflow-wrap: break-word;
 }
 
 header#banner {
