@@ -268,7 +268,7 @@ main#content pre code {
     padding: 0;
 }
 
-main#content section.footnotes {
+main#content .footnotes {
     font-size: 0.9em;
 }
 
