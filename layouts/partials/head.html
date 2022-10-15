@@ -29,4 +29,7 @@
 
     <link rel="canonical" href="{{ .Permalink }}" />
     <title>{{ .Title }}</title>
+
+    {{- partial "extend_head.html" . -}}
+    
 </head>
