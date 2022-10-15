@@ -62,6 +62,11 @@ main#content header#post-header div {
     color: #a7a7a7;
 }
 
+div#series-note {
+    border-top: 3px solid #3ee4f06c;
+    border-bottom: 3px solid #3ee4f06c;
+}
+
 footer#footer {
     color: #cccccc;
 }

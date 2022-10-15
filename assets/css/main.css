@@ -312,6 +312,15 @@ main#content section.footnotes {
     font-size: 0.9em;
 }
 
+div#series-note {
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-top: 3px solid #154c506c;
+    border-bottom: 3px solid #154c506c;
+}
+
 footer#footer {
     font-size: 10px;
     font-size: 1.4rem;
