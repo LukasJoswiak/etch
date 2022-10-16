@@ -321,6 +321,31 @@ div#series-note {
     border-bottom: 3px solid #154c506c;
 }
 
+/* styling for tables */
+main#content table, th, td {
+    border: 1px solid black; 
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+main#content th {
+    padding: 20px;
+    background-color: #a32fab17;
+    text-align: center;
+}
+
+main#content td {
+    padding: 20px;
+}
+
+main#content tbody tr:nth-child(even) {
+    background-color: #a32fab17;
+}
+  
+main#content tbody tr:nth-child(odd) {
+    background-color: #a32fab2e;
+}
+
 footer#footer {
     font-size: 10px;
     font-size: 1.4rem;

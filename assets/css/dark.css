@@ -23,7 +23,11 @@ header#banner nav ul li a {
 }
 
 main#content a {
-    color: #00b1ed;
+    color: #39d7e2;
+}
+
+main#content a:hover {
+    color: #27959d;
 }
 
 main#content p {
@@ -65,6 +69,23 @@ main#content header#post-header div {
 div#series-note {
     border-top: 3px solid #3ee4f06c;
     border-bottom: 3px solid #3ee4f06c;
+}
+
+/* styling for tables */
+main#content table, th, td {
+    border: 2px solid #8e869d; 
+}
+
+main#content th {
+    background-color: #553857;
+}
+
+main#content tbody tr:nth-child(even) {
+    background-color: #372538;
+}
+  
+main#content tbody tr:nth-child(odd) {
+    background-color: #503652;
 }
 
 footer#footer {
