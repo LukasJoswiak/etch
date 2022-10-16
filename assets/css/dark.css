@@ -67,6 +67,23 @@ div#series-note {
     border-bottom: 3px solid #3ee4f06c;
 }
 
+/* styling for tables */
+main#content table, th, td {
+    border: 2px solid #8e869d; 
+}
+
+main#content th {
+    background-color: #553857;
+}
+
+main#content tbody tr:nth-child(even) {
+    background-color: #372538;
+}
+  
+main#content tbody tr:nth-child(odd) {
+    background-color: #503652;
+}
+
 footer#footer {
     color: #cccccc;
 }
