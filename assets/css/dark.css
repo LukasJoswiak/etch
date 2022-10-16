@@ -23,7 +23,11 @@ header#banner nav ul li a {
 }
 
 main#content a {
-    color: #00b1ed;
+    color: #39d7e2;
+}
+
+main#content a:hover {
+    color: #27959d;
 }
 
 main#content p {
