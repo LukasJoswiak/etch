@@ -324,9 +324,10 @@ div#series-note {
 
 /* styling for tables */
 main#content table, th, td {
-    border: 1px solid black; 
-    border-collapse: collapse;
-    table-layout: fixed;
+    border-spacing: 10px 5px;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 main#content th {
@@ -336,7 +337,7 @@ main#content th {
 }
 
 main#content td {
-    padding: 20px;
+    padding: 15px;
 }
 
 main#content tbody tr:nth-child(even) {
