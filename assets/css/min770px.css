@@ -9,15 +9,20 @@
         margin-left: -3.8%;
     }
     
-    /* index.html styles */
-    header#banner h2 {
-        font-size: 25px;
-        font-size: 2.5rem;
+     /* styling for each blog post too (index.html styles) */
+     header#banner h2 {
+        font-size: 28px;
+        font-size: 2.8rem;
     }
     
     main#content h3 {
-        font-size: 20px;
-        font-size: 2rem;
+        font-size: 23px;
+        font-size: 2.3rem;
+    }
+
+    main#content h4 {
+        font-size: 19px;
+        font-size: 1.9rem;
     }
     
     main#content ul#posts {
@@ -25,10 +30,10 @@
         font-size: 1.8rem;
     }
     
-    /* single.html styles */
+    /* styling for each blog post (single.html styles) */
     main#content header#post-header h1 {
-        font-size: 24px;
-        font-size: 2.4rem;
+        font-size: 30px;
+        font-size: 3.0rem;
     }
     
     main#content img {

@@ -90,9 +90,11 @@ main#content h2 {
 }
 
 main#content h3 {
-    font-size: 19px;
-    font-size: 1.9rem;
     margin-bottom: 15px;
+}
+
+main#content h4 {
+    margin-bottom: 10px;
 }
 
 main#content h1 + p,
