@@ -280,3 +280,21 @@ footer#footer {
     color: #b3b3b3;
     margin: 40px 0;
 }
+
+.header-content {
+    position: relative;
+    display: inline-block;
+}
+  
+.header-content:before {
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: -5%;
+    width: 110%;
+    height: 100%;
+    background-color: #B0E0E6;
+    transform: skewX(-15deg);
+    z-index: -1;
+}
+  
