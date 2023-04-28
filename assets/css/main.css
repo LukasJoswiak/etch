@@ -298,3 +298,46 @@ footer#footer {
     z-index: -1;
 }
   
+.landing-page-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 5rem;
+    padding: 0rem;
+}
+  
+.image-content {
+    display: flex;
+    justify-content: center;
+}
+  
+.profile-image {
+    max-width: 100%;
+    height: auto;
+}
+  
+@media (max-width: 767px) {
+    .landing-page-content {
+        grid-template-columns: 1fr;
+    }
+}
+  
+.image-accent {
+    position: relative;
+}
+  
+.image-accent::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #B3E5FC;
+    z-index: -1;
+    top: 5%;
+    left: 10%;
+}
+  
+.profile-image {
+    position: relative;
+    z-index: 1;
+}
+  

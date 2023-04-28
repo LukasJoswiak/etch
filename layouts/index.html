@@ -1,11 +1,20 @@
 {{ define "main" }}
-    <article>
-        <header id="post-header">
-            {{ if eq .RelPermalink "/" }}
-                <h1 style="visibility:hidden;">&nbsp;</h1>
-            {{ end }}
-        </header>
-        {{- partial "about_excerpt.html" . -}}
-        {{ .Content }}
-    </article>
+<article>
+    <header id="post-header">
+        {{ if eq .RelPermalink "/" }}
+            <h1 style="visibility:hidden;">&nbsp;</h1>
+        {{ end }}
+    </header>
+    <div class="landing-page-content">
+        <div class="text-content">
+            {{- partial "about_excerpt.html" . -}}
+            {{ .Content }}
+        </div>
+        <div class="image-content image-accent">
+            <img src="{{ "img/05_headshot.jpeg" | absURL }}" alt="Your Name" class="profile-image">
+        </div>
+    </div>
+</article>
 {{ end }}
+
+
