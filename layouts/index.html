@@ -1,4 +1,8 @@
 {{ define "main" }}
-{{ .Content }}
-{{- partial "posts.html" . -}}
+    <article>
+        <header id="post-header">
+            {{- partial "about_excerpt.html" . -}}
+        </header>
+        {{ .Content }}
+    </article>
 {{ end }}
