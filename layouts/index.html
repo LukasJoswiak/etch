@@ -1,8 +1,11 @@
 {{ define "main" }}
     <article>
         <header id="post-header">
-            {{- partial "about_excerpt.html" . -}}
+            {{ if eq .RelPermalink "/" }}
+                <h1 style="visibility:hidden;">&nbsp;</h1>
+            {{ end }}
         </header>
+        {{- partial "about_excerpt.html" . -}}
         {{ .Content }}
     </article>
 {{ end }}

@@ -1,7 +1,3 @@
-{{ if eq .RelPermalink "/" }}
-  <h1 style="visibility:hidden;">&nbsp;</h1>
-  <div></div>
-{{ end }}
 {{ $about := .Site.GetPage "about" }}
 {{ $firstParagraph := (findRE "<p>.*?</p>" ($about.Content) 1) }}
 {{ safeHTML (index $firstParagraph 0) }}
