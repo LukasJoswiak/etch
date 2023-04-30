@@ -319,6 +319,11 @@ footer#footer {
     .landing-page-content {
         grid-template-columns: 1fr;
     }
+    .image-content {
+        max-width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
   
 .image-accent {
@@ -335,9 +340,3 @@ footer#footer {
     top: 5%;
     left: 10%;
 }
-  
-.profile-image {
-    position: relative;
-    z-index: 1;
-}
-  
