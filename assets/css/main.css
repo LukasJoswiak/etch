@@ -59,6 +59,12 @@ header#banner nav ul li a {
     color: #454545;
 }
 
+@media (max-width: 767px) {
+    header#banner {
+        margin-left: 20px;
+    }
+}
+
 main#content a {
     color: #007ACC;
     text-decoration: none;
