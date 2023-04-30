@@ -19,7 +19,7 @@ body {
 }
 
 header#banner {
-    margin: 25px 0;
+    margin: 25px 0 40px 0;
 }
 
 header#banner a {
@@ -52,7 +52,7 @@ header#banner nav ul {
 
 header#banner nav ul li {
     display: inline;
-    margin: 0 5px;
+    margin: 0 8px;
 }
 
 header#banner nav ul li a {
