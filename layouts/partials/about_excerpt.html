@@ -1,3 +1,5 @@
 {{ $about := .Site.GetPage "about" }}
-{{ $firstParagraph := (findRE "<p>.*?</p>" ($about.Content) 1) }}
-{{ safeHTML (index $firstParagraph 0) }}
+{{ $sentencesCount := (default 2 .Site.Params.aboutExcerptSentences) }}
+{{ $pattern := print "<p>(.*?\\.([[:space:]]|</p>)){" $sentencesCount "}" }}
+{{ $excerpt := (findRE $pattern ($about.Content) 1) }}
+{{ safeHTML (index $excerpt 0) }}
