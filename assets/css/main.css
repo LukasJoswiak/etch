@@ -316,11 +316,13 @@ footer#footer {
     justify-content: center;
 }
   
-.profile-image {
-    max-width: 100%;
+main#content .profile-image {
+    width: 100%;
     height: auto;
+    display: block;
+    margin: 0px;
 }
-  
+
 @media (max-width: 767px) {
     .landing-page-content {
         grid-template-columns: 1fr;
