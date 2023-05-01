@@ -1,4 +1,14 @@
-<header id="post-header"><h1>{{ .Title }}</h1></header>
+<!-- Use the declared title -->
+<header id="post-header">
+    <h1>{{ .Title }}</h1>
+</header>
+
+<!-- If there's content print it with some bottom margin -->
+{{ with .Content }}
+    {{ . }} <hr style="height:0px; visibility:hidden;" />
+{{ end }}
+
+<!-- Print the "post" (or the collection) -->
 <ul id="posts">
 {{- range where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{ .Render "li" }}
