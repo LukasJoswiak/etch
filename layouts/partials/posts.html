@@ -1,4 +1,4 @@
-<h3>{{ i18n "posts.title" }}</h3>
+<header id="post-header"><h1>{{ .Title }}</h1></header>
 <ul id="posts">
 {{- range where site.RegularPages "Type" "in" site.Params.mainSections }}
     {{ .Render "li" }}
