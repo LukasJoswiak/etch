@@ -373,5 +373,5 @@ main#content .bottom-image {
     bottom: 0;
     width: 30%;
     height: auto;
-    max-width: 300px; /* Set the maximum width */
+    max-width: 200px; /* Set the maximum width */
 }
