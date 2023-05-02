@@ -367,3 +367,11 @@ main#content .profile-image {
 .image-wrapper:hover::before {
     opacity: 1;
 }
+
+main#content .bottom-image {
+    position: fixed;
+    bottom: 0;
+    width: 30%;
+    height: auto;
+    max-width: 300px; /* Set the maximum width */
+}
