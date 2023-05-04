@@ -10,7 +10,7 @@
 
 <!-- Print the "post" (or the collection) -->
 <ul id="posts">
-{{- range where site.RegularPages "Type" "in" site.Params.mainSections }}
-    {{ .Render "li" }}
+{{- range .Pages }}
+    {{ .Render "li_posts" }}
 {{- end }}
 </ul>
