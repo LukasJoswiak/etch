@@ -1,0 +1,5 @@
+{{ define "main" }}
+    {{ range .Sections }}
+        {{- partial "posts.html" . -}}
+    {{ end }}
+{{ end }}
