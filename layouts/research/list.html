@@ -1,0 +1,70 @@
+{{ define "main" }}
+<style>
+    .abstract {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    .abstract-toggle {
+        color: #007ACC;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    ul.no-bullets {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    ul.no-bullets li {
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<header id="post-header">
+    <h1>{{ .Title }}</h1>
+</header>
+
+<div id="papers">
+    {{ range .Site.Data.papers }}
+    <div class="paper">
+        <h4 style="margin-bottom: 0.5rem;">{{ .title }}</h4>
+        <ul class="no-bullets">
+            {{ with .coauthors }}<li>with {{ . | markdownify }}</li>{{ end }}
+            {{ with .info }}<li>{{ . | markdownify }}</li>{{ end }}
+            {{ with .abstract }}<li><span class="abstract-toggle" data-abstract-id="{{ md5 . }}">▽ more</span></li>{{ end }}
+        </ul> 
+        {{with .abstract }}
+            <div id="{{ md5 . }}" class="abstract" style="max-height: 0;">
+                {{ . }}
+            </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+
+<script>
+    document.querySelectorAll(".abstract-toggle").forEach((toggle) => {
+        toggle.addEventListener("click", (e) => {
+            const abstractId = e.target.dataset.abstractId;
+            const abstractElement = document.getElementById(abstractId);
+
+            // Toggle the current abstract
+            const isHidden = abstractElement.style.maxHeight === "0px";
+            abstractElement.style.maxHeight = isHidden ? abstractElement.scrollHeight + "px" : "0px";
+
+            // Update the toggle text
+            e.target.textContent = isHidden ? "△ less" : "▽ more";
+
+            // Hide other abstracts and reset their toggle text
+            document.querySelectorAll(".abstract-toggle").forEach((elem) => {
+                if (elem.dataset.abstractId !== abstractId) {
+                    const otherAbstractElement = document.getElementById(elem.dataset.abstractId);
+                    otherAbstractElement.style.maxHeight = "0px";
+                    elem.textContent = "▽ more";
+                }
+            });
+        });
+    });
+</script>
+{{ end }}
