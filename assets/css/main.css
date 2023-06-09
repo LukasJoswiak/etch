@@ -364,7 +364,8 @@ main#content .profile-image {
     transition: opacity 0.3s;
 }
 
-.image-wrapper:hover::before {
+.image-wrapper:hover::before,
+.image-wrapper:active::before {
     opacity: 1;
 }
 
