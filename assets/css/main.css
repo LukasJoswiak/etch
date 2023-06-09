@@ -34,8 +34,8 @@ header#banner a:hover {
 
 header#banner h2 {
     display: inline;
-    font-size: 21px;
-    font-size: 2.1rem;
+    font-size: 20px;
+    /* font-size: 2.1rem; */
     margin: 0 8px 0 0;
 }
 
@@ -63,6 +63,12 @@ header#banner nav ul li a {
 @media (max-width: 767px) {
     header#banner {
         margin-left: 20px;
+    }
+    header#banner nav ul {
+        font-size: .95em;
+    }
+    header#banner nav ul li {
+        margin: 0 4px;
     }
 }
 
