@@ -1,4 +1,7 @@
 <head>
+    {{ if $googleAnalytics := .Site.Params.google_analytics }}
+        {{ partial "analytics.html" . }}
+    {{ end }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{ with .Site.Params.description -}}
