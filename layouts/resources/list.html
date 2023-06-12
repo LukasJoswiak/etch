@@ -1,5 +1,6 @@
 {{ define "main" }}
-    {{ range .Sections }}
+    {{ range .Sections.Reverse }}
         {{- partial "posts.html" . -}}
+        <br>
     {{ end }}
 {{ end }}
