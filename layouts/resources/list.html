@@ -1,5 +1,5 @@
 {{ define "main" }}
-    {{ range .Sections.Reverse }}
+    {{ range .Sections.ByWeight }}
         {{- partial "posts.html" . -}}
         <br>
     {{ end }}
