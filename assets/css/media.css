@@ -1,0 +1,69 @@
+/* Wide width ("desktop" view) */
+@media (min-width: 968px) {
+    body {
+        width: 800px;
+        /* line-height: 1.5; */
+    }
+
+    main#content hr {
+        width: 108%;
+        margin-left: -3.8%;
+    }
+
+    main#content h3 {
+        font-size: 20px;
+        font-size: 2rem;
+    }
+
+    main#content ul#posts {
+        font-size: 18px;
+        font-size: 1.8rem;
+    }
+
+    /* single.html styles */
+    main#content header#post-header h1 {
+        font-size: 24px;
+        font-size: 2.4rem;
+    }
+
+    main#content img {
+        max-width: 108%;
+        margin-left: -3.8%;
+    }
+
+    main#content figure {
+        margin-left: -3.8%;
+    }
+
+    main#content figure img {
+        max-width: 108%;
+    }
+
+    main#content pre {
+        width: 108%;
+        margin-left: -3.8%;
+        padding: 1.5rem 2.2rem;
+    }
+}
+
+/* Mid width ("narrow desktop") with smooth body scaling from 800px to 600px */
+@media (min-width: 768px) and (max-width: 967px) {
+    body {
+        width: calc(600px + (200 * (100vw - 768px) / 200)); /* This will proportionally increase the width */
+    }
+}
+
+/* Narrow width ("mobile") */
+@media (max-width: 767px) {
+    .landing-page-content {
+        grid-template-columns: 1fr;
+    }
+    .image-content {
+        max-width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header#banner h2 {
+        font-size: 2.1rem;
+    }
+}
