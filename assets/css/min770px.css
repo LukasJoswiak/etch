@@ -1,8 +1,9 @@
-@media (min-width: 770px) {
-body {
-    width: 600px;
-    line-height: 1.5;
+@media (min-width: 768px) and (max-width: 967px) {
+    body {
+        width: calc(600px + (200 * (100vw - 768px) / 200)); /* This will proportionally increase the width */
+    }
 }
+
 
 main#content hr {
     width: 108%;
