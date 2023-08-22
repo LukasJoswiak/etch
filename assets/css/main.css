@@ -34,8 +34,7 @@ header#banner a:hover {
 
 header#banner h2 {
     display: inline;
-    font-size: 20px;
-    /* font-size: 2.1rem; */
+    font-size: 2.5rem;
     margin: 0 8px 0 0;
 }
 
@@ -340,6 +339,9 @@ main#content .profile-image {
         max-width: 180px;
         margin-left: auto;
         margin-right: auto;
+    }
+    header#banner h2 {
+        font-size: 2.1rem;
     }
 }
   
