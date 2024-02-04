@@ -1,7 +1,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ or .Description .Site.Params.description "My Hugo Site" }}">
+
+    {{ if or .Description .Site.Params.description -}}
+    <meta name="description" content="{{ or .Description .Site.Params.description }}">
+    {{ end -}}
+
     {{ printf `<link rel="shortcut icon" href="%s">` ("favicon.ico" | absURL) | safeHTML }}
     {{ with .OutputFormats.Get "rss" -}}
         {{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
