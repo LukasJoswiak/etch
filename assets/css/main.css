@@ -16,6 +16,8 @@ body {
     padding: 0 16px;
     line-height: 1.6;
     overflow-wrap: break-word;
+    text-align: start;
+    unicode-bidi: plaintext;
 }
 
 header#banner {
@@ -76,11 +78,13 @@ main#content h5,
 main#content h6 {
     margin-bottom: 0;
     line-height: 1.15;
+    unicode-bidi: plaintext;
 }
 
 main#content h3 {
     font-size: 19px;
     font-size: 1.9rem;
+    unicode-bidi: plaintext;
 }
 
 main#content h1 + p,
@@ -90,17 +94,20 @@ main#content h4 + p,
 main#content h5 + p,
 main#content h6 + p {
     margin-top: 5px;
+    unicode-bidi: plaintext;
 }
 
 main#content p {
     color: #394548;
     margin: 16px 0;
+    unicode-bidi: plaintext;
 }
 
 main#content hr {
     height: 1px;
     border: 0;
     background: #d8d8d8;
+    unicode-bidi: plaintext;
 }
 
 main#content abbr {
@@ -146,12 +153,14 @@ main#content header#post-header h1 {
     font-size: 2.3rem;
     font-weight: 600;
     line-height: 1.15;
+    unicode-bidi: plaintext;
 }
 
 main#content header#post-header > div {
     display: block;
     font-size: 0.85em;
     color: #767676;
+    unicode-bidi: plaintext;
 }
 
 main#content #toc {
@@ -166,6 +175,7 @@ main#content #toc h4 {
     font-size: 1.06em;
     color: #3d3d3d;
     margin: 0;
+    unicode-bidi: plaintext;
 }
 
 main#content #toc nav#TableOfContents {
@@ -221,6 +231,7 @@ main#content figure figcaption {
     text-align: center;
     margin-top: 6px;
     padding: 0 10px;
+    unicode-bidi: plaintext;
 }
 
 main#content figure figcaption h4 {
@@ -242,6 +253,7 @@ main#content blockquote {
     margin-left: 50px;
     padding-left: 15px;
     border-left: 3px solid #ccc;
+    unicode-bidi: plaintext;
 }
 
 main#content code,
@@ -263,6 +275,7 @@ main#content pre {
     margin: 20px 0;
     padding: 1.5rem 1.5rem;
     line-height: 1.4;
+    unicode-bidi: plaintext;
 }
 
 main#content pre code {
