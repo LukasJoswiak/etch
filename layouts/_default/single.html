@@ -11,6 +11,11 @@
             {{ end }}
         {{- end -}}
         </div>
+        {{- with .GetTerms "tags" -}}
+        <p>
+                {{- range . }}<a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a> {{ end -}}
+        </p>
+        {{- end -}}
     </header>
     {{- .Content -}}
 </article>

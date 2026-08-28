@@ -1,7 +1,7 @@
 baseURL = "https://example.com"
 title = "Website Name"
 theme = "etch"
-languageCode = "en-US"
+locale = "en-US"
 enableInlineShortcodes = true
 pygmentsCodeFences = true
 pygmentsUseClasses = true
